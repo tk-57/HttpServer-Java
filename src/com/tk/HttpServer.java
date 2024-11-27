@@ -57,7 +57,6 @@ public class HttpServer extends Thread{
                     this.respondOk(out);
                 }
             } catch (EmptyRequestException e) {
-                e.printStackTrace();
             } catch (IOException e) {
                 throw new UncheckedIOException(e);
             } finally {
